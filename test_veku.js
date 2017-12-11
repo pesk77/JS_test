@@ -9,4 +9,4 @@ else
 }
 document.write("<br />"); //vloží HTML tag pro novou řádku
 var vek = prompt("Zadejte svůj věk");
-document.write((vek > 18) ? "Jsi plnoletý" : "Nejsi plnoletý");
+alert((vek > 18) ? "Jsi plnoletý" : "Nejsi plnoletý");
