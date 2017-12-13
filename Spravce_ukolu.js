@@ -9,5 +9,7 @@ data = {
     povolani: "kapitán"
 }
 for (klic in data) {
-    alert(klic + " je " + data[klic]);
+    if (data.hasOwnProperty(klic)) {
+        alert(klic + " je " + data[klic]);
+    }
 }

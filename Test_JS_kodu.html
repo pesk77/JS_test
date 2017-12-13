@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<html lang="cs-cz">
+<head>
+    <meta charset="utf-8" />
+    <title>Test krátkých JavaScript kódů</title>
+</head>
+
+<body>
+<script>
+    // Deklarujeme globalni promennou
+    var a = "a";
+    
+    function urovenb() {
+        // Deklarujeme promennou na urovni b
+        var b = "b";
+        function urovenc() {
+            // Deklarujeme promennou na urovni c
+            var c = "c";
+            function urovend() {
+                // deklarujeme promennou na urovni d
+                var d = "d";
+                console.log("urovend", a, b, c ,d);
+            }
+            console.log("urovenc", a ,b, c);
+        }
+        console.log("urovenb", a, b);
+    }
+    console.log("globalni", a);
+    urovenb();
+    console.log("test")
+
+    
+</script>
+</body>
+</html>
