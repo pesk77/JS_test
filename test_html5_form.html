@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test formuláře</title>
+</head>
+<body>
+
+<form action="/script" method="post" enctype="multipart/form-data">
+    <p>
+        <label for="jmeno">Vaše jméno:</label>
+        <input type="text" name="jmeno" id="jmeno" required>
+    </p>
+
+    <p>
+        <label for="mesto">Místo pobytu:</label>
+        <input type="text" name="mesto" id="mesto">
+    </p>
+
+    <p>
+        <label for="email">E-mailová adresa (více adres lze oddělit
+            čárkami):</label>
+        <input type="email" name="email" id="email"
+            placeholder="jan.novak@priklad.cz" multiple required>
+    </p>
+
+    <p>
+        <label for="telefon">Telefonní číslo:</label>
+        <input type="tel" name="telefon" id="telefon"
+            placeholder="(+420) 123 456 789"
+            pattern="(\+420)? ?\d{3} ?\d{3} ?\d{3}">
+    </p>
+
+    <p>
+        <label for="stranky">Adresa webových stránek, kde bychom se mohli
+            dozvědět více:</label>
+        <input type="url" name="stranky" id="stranky"
+            placeholder="http://www.vasedomena.cz"
+            pattern="https(|s)://[-0-9a-z.]{1,253}\.[.a-z]{2,7}">
+    </p>
+
+    <p>
+        <label for="napad">Sdělte nám svůj nápad na příběh:</label>
+        <textarea name="napad" id="napad" rows="10" required
+            placeholder="Stručně nám sdělte, o čm bychom měli psát a proč."
+            maxlength="2000"></textarea>
+    </p>
+
+    <p>
+        <button type="submit">Odeslat</button>
+    </p>
+
+</form>
+
+</body>
+</html>
