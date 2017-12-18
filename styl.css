@@ -1,8 +1,13 @@
 
 body {
-    font-family: Verdana;
-    font-size: 14px;
-    background: #009aca;
+    background: url('obrazky/pozadi_sede.png') #1c2228;
+    margin: 0px;
+    font: 14px Verdana;
+    min-width: 960px;
+}
+
+header {
+    height: 73px;
 }
 
 article {
@@ -39,6 +44,41 @@ h2 {
     font-size: 1.7em;
 }
 
+nav ul {
+    margin: 0px;
+    list-style-type: none;
+}
+
+nav ul li {
+    float: left;
+    padding: 0px 25px;
+    margin: 0 5px;
+    font-size: 17px;
+    height: 73px;
+    line-height: 4.3em;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li:hover, .aktivni {
+    background: #ffbb00;
+    box-shadow: 0px 0px 5px black;
+}
+
+footer {
+    height: 40px;
+    color: white;
+    margin: 20px 0 0 30px;
+}
+
+footer a {
+    color:  #ffbb00;
+    text-decoration: none;
+}
+
 .centrovany {
     text-align: center;
 }
@@ -49,4 +89,35 @@ h2 {
 
 .cistic {
     clear: both;
+}
+
+#logo {
+    background: url('obrazky/logo.png') no-repeat;
+    width: 250px;
+    height: 60px;
+    float: left;
+    margin: 7px 0px 0px 20px;
+}
+
+#logo h1 {
+    margin: 14px 0px 0px 10px;
+}
+
+#centrovac {
+    margin: 0px auto;
+    width: 960px;
+}
+
+#dovednosti td {
+    width: 33%;
+    padding: 20px;
+    vertical-align: top;
+    border-collapse: collapse;
+}
+
+#reference img {
+    border: 1px solid gray;
+    padding: 6px;
+    box-shadow: 3px 3px 6px #999999;
+    margin-right: 6px;
 }
